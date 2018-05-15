@@ -1,0 +1,32 @@
+
+**** Build of configuration Debug for project da_lab_0 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../main.asm"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmsp --code_model=small --data_model=small --use_hw_mpy=none --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/david/workspace_v7/da_lab_0" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+'Finished building: "../main.asm"'
+ 
+'Building target: "da_lab_0.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmsp --code_model=small --data_model=small --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"da_lab_0.map" --heap_size=0 --stack_size=0 -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="da_lab_0_linkInfo.xml" --entry_point=RESET --use_hw_mpy=none -o "da_lab_0.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ RESET                     
+
+error #10234-D: unresolved symbols remain
+warning #10062-D: entry-point symbol "RESET" undefined
+
+>> Compilation failure
+makefile:141: recipe for target 'da_lab_0.out' failed
+makefile:137: recipe for target 'all' failed
+warning #10202-D: no suitable entry-point found; setting to 0
+error #10010: errors encountered during linking; "da_lab_0.out" not built
+gmake[1]: *** [da_lab_0.out] Error 1
+gmake: *** [all] Error 2
+
+**** Build Finished ****
